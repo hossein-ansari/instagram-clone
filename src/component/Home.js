@@ -40,7 +40,6 @@ export default function Home() {
 
         <Modal.Footer>
         <AiOutlineHeart></AiOutlineHeart>
-
         </Modal.Footer>
       </Modal.Dialog>
 
