@@ -1,0 +1,71 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 100vh;
+  padding: 0px;
+}
+.stories {
+  padding: 55px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-end;
+  overflow: scroll hidden;
+  justify-content: center;
+  width: 90%;
+  height: 0vh;
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+.stories::-webkit-scrollbar-track {
+}
+.stories::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 5px solid rgb(249, 249, 249); /* creates padding around scroll thumb */
+}
+.stories ul {
+  height: 5vh;
+  width: 140%;
+}
+.stories ul li {
+  margin: 0 5px;
+}
+.stories ul li a {
+  background-color: rgb(168, 168, 168);
+  width: 70px;
+  height: 70px;
+  border-radius: 50% !important;
+}
+.posts {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 65vh;
+  background-color: rgb(180, 181, 206);
+}
+.modal-dialog {
+  border: 2px solid black;
+  height: 90%;
+}
+.modal-body{
+  width: 100%;
+}
+.modal-body img{
+  width: 100%;
+}
+.modal-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.modal-header p{
+margin-right: 100%;
+margin-left: 10px;
+margin-top: 10px
+;
+text-transform: capitalize;
+}
