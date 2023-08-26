@@ -1,0 +1,43 @@
+.profile {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: capitalize;
+}
+.info-nav{
+    height: max-content;
+    
+}
+.profile-img {
+    width: 7vw !important;
+    height: 6vw !important;
+    margin-left: 2vw;
+}
+
+.profile-name {
+  margin-right: 2vw;
+}
+
+.BIO {
+    margin: 5vh 2vh;
+    height: max-content;
+
+    border-bottom: 2px solid rgb(229, 229, 229);
+}
+
+.self-posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.self-posts img {
+    margin: 10px 5px;
+
+    width: 7vw !important;
+    border-radius: 5px;
+    border: 2px solid white;
+
+} 
