@@ -18,6 +18,7 @@
   display: flex;
   align-items: flex-end;
   overflow: scroll hidden;
+  scroll-behavior: smooth;
   justify-content: center;
   width: 90%;
   height: 0vh;
@@ -45,7 +46,8 @@
   margin: 0 !important;
 }
 .stories ul li a img {
-  border: 2px outset rgb(252, 48, 3) !important;
+  margin-right: 2px;
+  border: 2px solid rgb(252, 48, 3) !important;
 
   width: 70px;
   height: 70px;
@@ -58,6 +60,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden scroll;
+  scroll-behavior: smooth;
   width: 90%;
   height: 65vh;
   border: 2px solid rgb(248, 248, 248);
@@ -70,7 +73,6 @@
 }
 .modal-dialog {
   height: 100%;
-  margin-top: 5vh;
 }
 .modal-body {
   width: 100%;
@@ -105,3 +107,4 @@
   margin-top: 10px;
   text-transform: capitalize;
 }
+
