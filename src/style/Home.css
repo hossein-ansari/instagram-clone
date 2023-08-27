@@ -58,7 +58,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden scroll;
-
   width: 90%;
   height: 65vh;
   border: 2px solid rgb(248, 248, 248);
