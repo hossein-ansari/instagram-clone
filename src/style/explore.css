@@ -24,3 +24,22 @@
   width: max-content;
   max-height: 100px;
 }
+
+/* scroll style  */
+.explore::-webkit-scrollbar {
+  width: 12px;
+}
+
+.explore::-webkit-scrollbar-track {
+  background: #242424;
+  
+}
+
+.explore::-webkit-scrollbar-thumb {
+  background: #0059ff;
+
+  border-radius: 4px;
+}
+.explore::-webkit-scrollbar-thumb:hover {
+  background: #0040b6;
+}

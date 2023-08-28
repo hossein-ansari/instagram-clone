@@ -4,8 +4,7 @@ const AllDatasProvider = ({ children }) => {
   // datas 
   const [storiesImg, setStoriesIMg] = useState();
   const [exploreImg, setExploreIMg] = useState();
-  
-  const [storyScreen, setStoryScreen] = useState(null);
+
   const [canShowStory, setCanShowStory] = useState(false);
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -31,11 +30,9 @@ const AllDatasProvider = ({ children }) => {
     <contextBox.Provider
       value={{
         storiesImg,
-        storyScreen,
         canShowStory,
         exploreImg,
         setStoriesIMg,
-        setStoryScreen,
         setCanShowStory,
         setExploreIMg,
       }}
