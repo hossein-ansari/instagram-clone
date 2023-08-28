@@ -14,7 +14,8 @@
 .explore-post {
   align-items: center;
   max-height: 100px;
-  margin: 10px 5px;
+  margin: 5px 5px;
+  cursor: pointer;
 }
 .explore-img {
   border: 2px solid wheat;

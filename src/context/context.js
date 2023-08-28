@@ -1,9 +1,10 @@
 import React, { createContext, useEffect, useState } from "react";
 const contextBox = createContext();
 const AllDatasProvider = ({ children }) => {
+  // datas 
   const [storiesImg, setStoriesIMg] = useState();
   const [exploreImg, setExploreIMg] = useState();
-
+  
   const [storyScreen, setStoryScreen] = useState(null);
   const [canShowStory, setCanShowStory] = useState(false);
   const shuffleArray = (array) => {
