@@ -11,6 +11,7 @@ export default function Home() {
     data.setCanShowStory(true);
     data.setStoryScreen(e.target.src);
   }
+
   return (
     <div className="Home">
 

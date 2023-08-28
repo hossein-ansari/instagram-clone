@@ -13,13 +13,12 @@
 }
 .explore-post {
   align-items: center;
-  width: 120px;
   height: 100px;
   margin: 10px 5px;
 }
 .explore-img {
   border: 2px solid wheat;
   border-radius: 10px;
-  width: 120px;
+  width: max-content;
   height: 100px;
 }
