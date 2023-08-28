@@ -7,7 +7,7 @@ let Routes = [
   { path: "/", element: <Home /> },
   { path: "/explore", element: <Explore /> },
   { path: "/profile", element: <Profile /> },
-  { path: "/story-screen", element: <StoryScreen /> },
+  { path: "/story-screen/:storyId", element: <StoryScreen /> },
   { path: "/post/:id", element: <Post /> },
 
 

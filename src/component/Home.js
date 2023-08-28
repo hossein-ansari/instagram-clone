@@ -17,13 +17,10 @@ export default function Home() {
       <div className="stories">
         <Pagination>
           {data.storiesImg
-            ? data.storiesImg.map((img) => (
-                <li
-                  onClick={(e) => watchStories(e)}
-                  className="stories-div page-item stories-div"
-                >
-                  <NavLink to={"./story-screen"}>
-                    <img src={img.urls.raw}></img>
+            ? data.storiesImg.map((img, index) => (
+                <li className="stories-div page-item stories-div">
+                  <NavLink to={`./story-screen/${index}`}>
+                    <img src={img.user.profile_image.large}></img>
                   </NavLink>
                 </li>
               ))

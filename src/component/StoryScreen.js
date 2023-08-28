@@ -2,10 +2,11 @@ import React, { useContext, useState } from "react";
 import "../style/storyScreen.css";
 import { contextBox } from "../context/context";
 import { RxCross2 } from "react-icons/rx";
-import { Navigate, useNavigate } from "react-router";
+import { Navigate, useNavigate, useParams } from "react-router";
 
 export default function StoryScreen() {
   const data = useContext(contextBox);
+  const { storyId } = useParams();
 
   const [timerStory, setTimerStory] = useState(0);
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ export default function StoryScreen() {
     <div className="story-screen">
       <RxCross2 className="cross-icon" onClick={()=>{navigate('/')}}></RxCross2>
       <div style={{ width: `${timerStory}%` }} className="time-line"></div>
-      <img className="people-story" src={data.storyScreen}></img>
+      <img className="people-story" src={data.storiesImg[storyId].urls.raw} alt=""></img>
     </div>
   );
 }
