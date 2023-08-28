@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { contextBox } from "../context/context";
 import "../style/Post.css";
+import { RxCross2 } from "react-icons/rx";
 export default function Post() {
+  const navigate = useNavigate();
   const data = useContext(contextBox);
   const { id } = useParams();
   return (
@@ -12,10 +14,17 @@ export default function Post() {
           <img
             className="user-img"
             src={data.exploreImg[id].user.profile_image.medium}
+            alt=""
           ></img>
           <p className="user-name">
             {data.exploreImg[id].user.instagram_username}
           </p>
+          <RxCross2
+            className="cross-explore-icon"
+            onClick={() => {
+              navigate("/explore");
+            }}
+          ></RxCross2>
         </div>
         <img
           className="post-explore-img"
