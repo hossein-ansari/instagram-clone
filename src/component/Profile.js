@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import "../style/profile.css";
 import wonImage from "../images/wonImage.jpg";
@@ -6,8 +6,17 @@ import { contextBox } from "../context/context";
 
 export default function Profile() {
   const data = useContext(contextBox);
-  let canEdit = false
+  const [canEdit, setCanEdit] = useState(true);
   let userAccountDatas = JSON.parse(data.storage.getItem("user"));
+  const [bionmd, setBionmd] = useState(userAccountDatas.bio);
+
+  function changeBio(e) {
+    setBionmd(e.target.value);
+    let userAccountDatasCopy = { ...userAccountDatas };
+    userAccountDatasCopy.bio = e.target.value;
+    data.storage.setItem("user", JSON.stringify(userAccountDatasCopy));
+    console.log(userAccountDatasCopy);
+  }
   return (
     <div className="profile">
       <Modal.Dialog className="info-nav">
@@ -15,18 +24,27 @@ export default function Profile() {
           <Modal.Title>
             <img className="profile-img" src={wonImage}></img>
           </Modal.Title>
-
           <Modal.Title className="name-profile">
             <h3 className="profile-name">{userAccountDatas.username}</h3>
           </Modal.Title>
         </Modal.Header>
-
         <Modal.Body>
           <div className="BIO">
-            {" "}
-            <input className="bio-input" value={userAccountDatas.bio} type="text"></input>
-           
-            <button onClick={canEdit = !canEdit} className="edit-bio">edit</button>
+            <input
+              value={bionmd}
+              disabled={canEdit}
+              className="bio-input"
+              onChange={(e) => changeBio(e)}
+              type="text"
+            ></input>
+            <button
+              onClick={() => {
+                setCanEdit((prev) => !prev);
+              }}
+              className="edit-bio"
+            >
+              edit
+            </button>
           </div>
         </Modal.Body>
       </Modal.Dialog>

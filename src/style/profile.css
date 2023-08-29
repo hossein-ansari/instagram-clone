@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  
+
   margin: 5vh 2vh;
   height: max-content;
   border-bottom: 2px solid rgb(229, 229, 229);
@@ -40,13 +40,18 @@
   border-radius: 5px;
   border: 2px solid white;
 }
-.bio-input{
-  
+.bio-input {
+  text-transform: capitalize;
+  width: 100%;
+  background: none;
+  color: rgb(239, 239, 239);
+  border: none;
+  height: max-content;
 }
-.edit-bio{
+.edit-bio {
   color: rgb(163, 163, 163);
   border: none;
   background: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: auto;
 }
