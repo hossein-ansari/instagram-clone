@@ -1,0 +1,44 @@
+.login-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  color: white;
+  text-transform: capitalize;
+}
+.login-from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  padding: 5px;
+}
+.login-from input {
+  width: 25vw;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: max-content;
+  padding: 5px;
+  width: 100%;
+}
+.login-btn a {
+  background-color: blue;
+    text-decoration: none;
+  padding: 10px 4.1vw;
+    border-radius: 10px;
+    color: white;
+    margin: 0 1vw;
+}
+.register-from {
+}
+.register-btn {
+}
