@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { contextBox } from "../context/context";
 import "../style/Post.css";
+import { AiOutlineHeart } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 export default function Post() {
   const navigate = useNavigate();
@@ -31,7 +32,11 @@ export default function Post() {
           src={data.exploreImg[id].urls.raw}
           alt=""
         ></img>
-        <p className="post-dis">{data.exploreImg[id].alt_description}</p>
+        <div className="description-nav">
+          {" "}
+          <AiOutlineHeart></AiOutlineHeart>
+          <p className="post-dis">{data.exploreImg[id].alt_description}</p>
+        </div>
       </div>
     </div>
   );

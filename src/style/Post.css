@@ -43,3 +43,13 @@
 .post-dis {
   margin: 5px;
 }
+.description-nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.description-nav svg {
+  font-size: 1.5rem;
+  
+}
