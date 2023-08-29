@@ -18,6 +18,10 @@
 }
 
 .BIO {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
   margin: 5vh 2vh;
   height: max-content;
   border-bottom: 2px solid rgb(229, 229, 229);
@@ -35,4 +39,14 @@
   width: 7vw !important;
   border-radius: 5px;
   border: 2px solid white;
+}
+.bio-input{
+  
+}
+.edit-bio{
+  color: rgb(163, 163, 163);
+  border: none;
+  background: none;
+  font-size: .9rem;
+  margin-left: auto;
 }

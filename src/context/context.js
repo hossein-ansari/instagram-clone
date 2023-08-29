@@ -1,11 +1,14 @@
 import React, { createContext, useEffect, useState } from "react";
 const contextBox = createContext();
 const AllDatasProvider = ({ children }) => {
-  // datas 
+  // datas
   const [storiesImg, setStoriesIMg] = useState();
   const [exploreImg, setExploreIMg] = useState();
-
+  // user account
+  const [userAccount, setUserAccount] = useState();
   const [canShowStory, setCanShowStory] = useState(false);
+  // local storage
+  const storage = window.localStorage
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -32,6 +35,9 @@ const AllDatasProvider = ({ children }) => {
         storiesImg,
         canShowStory,
         exploreImg,
+        userAccount,
+        storage,
+        setUserAccount,
         setStoriesIMg,
         setCanShowStory,
         setExploreIMg,
