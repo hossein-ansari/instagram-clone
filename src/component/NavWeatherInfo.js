@@ -31,6 +31,21 @@ export default function NavWeatherInfo() {
             <img className="forecast-img" alt=""></img>
             <p className="forecast-temp">33'</p>
           </div>
+          <div className="forecast-time-info">
+            <p className="forecast-time">06:00 AM</p>
+            <img className="forecast-img" alt=""></img>
+            <p className="forecast-temp">33'</p>
+          </div>
+          <div className="forecast-time-info">
+            <p className="forecast-time">06:00 AM</p>
+            <img className="forecast-img" alt=""></img>
+            <p className="forecast-temp">33'</p>
+          </div>
+          <div className="forecast-time-info">
+            <p className="forecast-time">06:00 AM</p>
+            <img className="forecast-img" alt=""></img>
+            <p className="forecast-temp">33'</p>
+          </div>
         </div>
       </div>
       <div className="air-conditions-nav">
