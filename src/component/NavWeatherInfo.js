@@ -7,12 +7,20 @@ export default function NavWeatherInfo() {
   return (
     <div className="nav-weather-info">
       <div className="search-nav">
-        <input className="search-bar" placeholder="search" type="search"></input>
+        <input
+          className="search-bar"
+          placeholder="search"
+          type="search"
+        ></input>
       </div>
       <div className="main-info-nav">
-        <div className="main-weather-info"></div>
+        <div className="main-weather-info">
+          <p className="city-name">Madrid</p>
+          <p className="city-situation">rain</p>
+          <p className="city-temp" >33°</p>
+        </div>
         <div className="weather-img">
-          <img alt=""></img>
+          <img alt="image"></img>
         </div>
       </div>
       <div className="today-forecast-nav">

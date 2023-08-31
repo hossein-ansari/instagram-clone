@@ -1,26 +1,76 @@
 .nav-weather-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #202b3b;
   height: 96.8vh;
   width: 50vw;
   border-radius: 10px;
   margin-left: 1.5vw;
 }
 .search-nav {
-  width: 95%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
   margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.search-nav input {
+.search-bar {
+  color: white;
+  background-color: #202b3b;
   padding: 10px;
   border: none;
   height: 35px;
   border-radius: 10px;
-  width: 100%;
+  width: 95%;
   outline: none;
-  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.557);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.557);
 }
-.search-bar {
+.main-info-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 5vh;
+}
+.main-weather-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 10%;
+  width: 25vw;
+  margin: auto;
+}
+.city-name {
+  font-size: 2rem;
+  margin-bottom: auto;
+}
+.city-situation {
+  color: #828893;
+  margin-bottom: auto;
+}
+.city-temp {
+  font-size: 3rem;
+  margin-bottom: auto;
+}
+.weather-img {
+  width: 25vw;
+}
+.today-forecast-nav {
+}
+.today-forecast-h2 {
+}
+.forecast-time-nav {
+}
+.forecast-time-info {
+}
+.forecast-time {
+}
+.forecast-img {
+}
+.forecast-temp {
 }
