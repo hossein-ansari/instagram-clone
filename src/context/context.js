@@ -27,8 +27,8 @@ const AllDatasProvider = ({ children }) => {
     )
       .then((response) => response.json())
       .then((data) => setExploreIMg(shuffleArray(data.results)));
+
   }, []);
-  console.log(storiesImg);
   return (
     <contextBox.Provider
       value={{
