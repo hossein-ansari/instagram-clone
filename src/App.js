@@ -9,9 +9,12 @@ import NavWeatherDays from "./component/NavWeatherDays";
 function App() {
   return (
     <div className="App">
-      <NavMenu></NavMenu>
-      <NavWeatherInfo></NavWeatherInfo>
-      <NavWeatherDays></NavWeatherDays>
+      <div className="container">
+        
+        <NavMenu></NavMenu>
+        <NavWeatherInfo></NavWeatherInfo>
+        <NavWeatherDays></NavWeatherDays>
+      </div>
     </div>
   );
 }

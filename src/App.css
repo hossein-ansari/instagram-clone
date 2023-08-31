@@ -1,0 +1,14 @@
+.App {
+  background: linear-gradient(#555d69, #222d3c);
+  color: white;
+}
+.container {
+  height: 100vh;
+
+  background-color: #0b131e;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}

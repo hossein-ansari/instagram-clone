@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../style/navWeatherDays.css'
 export default function NavWeatherDays() {
   return (
     <div className="nav-weather-days">

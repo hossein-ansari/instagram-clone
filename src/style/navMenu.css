@@ -1,0 +1,24 @@
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 7vw;
+  height: 96.8vh;
+  background-color: #202b3b;
+  border-radius: 10px;
+}
+.menu-btn {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-btn p {
+  font-size: 1.1rem;
+}
+.menu-btn svg {
+  font-size: 1.5rem;
+}

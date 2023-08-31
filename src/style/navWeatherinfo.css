@@ -1,0 +1,26 @@
+.nav-weather-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #202b3b;
+  height: 96.8vh;
+  width: 50vw;
+  border-radius: 10px;
+  margin-left: 1.5vw;
+}
+.search-nav {
+  width: 95%;
+  margin-top: 3vh;
+}
+.search-nav input {
+  padding: 10px;
+  border: none;
+  height: 35px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.557);
+}
+.search-bar {
+}
