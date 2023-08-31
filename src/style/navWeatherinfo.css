@@ -10,7 +10,6 @@
 }
 .search-nav {
   width: 100%;
-  margin-top: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +31,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 5vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
 }
 .main-weather-info {
   display: flex;
@@ -65,28 +65,30 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 2vh 2vw ;
+  padding: 2vh 1vw;
 }
 .today-forecast-h2 {
+  padding: 0 2vw;
+
   font-size: 1rem;
   color: #828893;
 }
 .forecast-time-nav {
-    margin-top: 15px;
+  margin-top: 15px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: right;
 }
 .forecast-time-info {
-    padding: 1vh;
-    width: 8vw;
-    height: 20vh;
-    border-right: 1px solid #828893;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  padding: 1vh;
+  width: 8vw;
+  height: 25vh;
+  border-right: 1px solid #828893;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .forecast-time {
   color: #828893;
@@ -94,5 +96,49 @@
 .forecast-img {
 }
 .forecast-temp {
+  color: white;
+  font-size: 1.3rem;
+}
+.last {
+  border: none;
+}
+.air-conditions-nav {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #202b3b;
+  display: flex;
+  flex-direction: row;
+  padding: 2vh 1vw;
+  height: 25vh;
+  margin-top: 3vh;
+}
+.air-infos-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.air-infos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+}
+.air-infos-temp-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   color: #828893;
+}
+.air-infos-temp {
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.air-infos-characteristic {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.infos-info {
+  font-size: 2rem;
 }
