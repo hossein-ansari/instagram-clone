@@ -55,8 +55,18 @@
   margin-bottom: auto;
 }
 .weather-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
   width: 25vw;
 }
+.weather-img img {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
 .today-forecast-nav {
   width: 100%;
   border-radius: 10px;
