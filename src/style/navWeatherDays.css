@@ -1,11 +1,50 @@
 .nav-weather-days {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   border-radius: 10px;
   height: 96.8vh;
-  width:25vw;
+  width: 25vw;
   background-color: #202b3b;
   margin-left: 1.5vw;
+}
+.nav-weather-days h2{
+  align-self: flex-start;
+  font-size: 1rem;
+  color: #828893;
+  margin: 2vh;
+
+}
+.days-forecast-nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  height: 87.5;
+}
+.days-forecast-days {
+  border-bottom:1px solid #828893 ;
+  height: 12.5vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.last{
+  border: none;
+}
+.days-forecast-day {
+  color: #828893;
+
+}
+.days-forecast-situation {
+  color: #c4cad3;
+
+}
+.days-forecast-deduction {
+  color: #c4cad3;
 }
