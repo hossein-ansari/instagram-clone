@@ -1,21 +1,24 @@
 import React, { createContext, useEffect, useState } from "react";
 const contextBox = createContext();
 const AllDatasProvider = ({ children }) => {
+  const [cityInfo, setCityInfo] = useState();
+  const [forecastInfo, setForecastInfo] = useState();
+  console.log(cityInfo,
+    forecastInfo);
   useEffect(() => {
-    fetch('https://wft-geo-db.p.rapidapi.com/v1/geo/countries', {
-      method: "GET",
-      headers: {
-        'X-RapidAPI-Key': '48d15888fbmsh245d3f7b35e52f9p12d515jsndd317c5231ff',
-        'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
+    fetch(
+      "http://api.openweathermap.org/data/2.5/forecast?q=New York,US&appid=0e89a6da403bb8b4ec40a7f0fedb1482",
+      {
+        method: "GET",
       }
-    })
-      .then((response) => {
-        response.text();
-      })
+    )
+      .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        setCityInfo(data.city);
+        setForecastInfo(data.list);
       });
   }, []);
-  return <contextBox.Provider value={{}}>{children}</contextBox.Provider>;
+  return <contextBox.Provider value={{cityInfo,
+    forecastInfo}}>{children}</contextBox.Provider>;
 };
 export { AllDatasProvider, contextBox };
