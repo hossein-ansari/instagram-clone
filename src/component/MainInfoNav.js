@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { contextBox } from "../context/context";
+import ConvertTemperature from "../custom Hooks/ConvertTemperature";
+
 export default function MainInfoNav() {
   const data = useContext(contextBox);
-  function ConvertTemperature(temp) {
-    return Math.floor(temp - 273.15);
-  }
   return (
     <div className="main-info-nav">
       <div className="main-weather-info">
