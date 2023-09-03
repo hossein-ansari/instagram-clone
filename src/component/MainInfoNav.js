@@ -9,7 +9,7 @@ export default function MainInfoNav() {
           {data.cityInfo !== undefined ? data.cityInfo.name : ""}
         </p>
         <p className="city-situation">{data.forecastInfo !== undefined ? data.forecastInfo[0].weather[0].main : ""}</p>
-        <p className="city-temp">33°</p>
+        <p className="city-temp">{data.forecastInfo !== undefined ? Math.floor(data.forecastInfo[1].main.temp - 273.15) : ""}°</p>
       </div>
       <div className="weather-img">
         <img alt="image"></img>
