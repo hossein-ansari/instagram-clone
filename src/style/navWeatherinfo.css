@@ -9,6 +9,7 @@
   margin-left: 1.5vw;
 }
 .search-nav {
+  height: 7vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -27,6 +28,7 @@
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.557);
 }
 .main-info-nav {
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,7 +120,7 @@
   display: flex;
   flex-direction: row;
   padding: 2vh 1vw;
-  height: 25vh;
+  height: 20vh;
   margin-top: 3vh;
 }
 .air-infos-nav {
