@@ -79,20 +79,19 @@
 }
 .today-forecast-h2 {
   padding: 0 2vw;
-
   font-size: 1rem;
   color: #828893;
 }
 .forecast-time-nav {
   margin-top: 15px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
 }
 .forecast-time-info {
   padding: 1vh;
-  width: 8vw;
+  width: 9.5vw;
   height: 25vh;
   border-right: 1px solid #828893;
   display: flex;
