@@ -6,7 +6,7 @@ const AllDatasProvider = ({ children }) => {
   console.log(cityInfo, forecastInfo);
   useEffect(() => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&appid=0e89a6da403bb8b4ec40a7f0fedb1482",
+      "http://api.openweathermap.org/data/2.5/forecast?q=Copenhagen,Copenhagen&appid=0e89a6da403bb8b4ec40a7f0fedb1482",
       {
         method: "GET",
       }
