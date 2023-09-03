@@ -9,24 +9,23 @@
   background-color: #202b3b;
   margin-left: 1.5vw;
 }
-.nav-weather-days h2{
+.nav-weather-days h2 {
   align-self: flex-start;
   font-size: 1rem;
   color: #828893;
   margin: 2vh;
-
 }
 .days-forecast-nav {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column; 
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 87.5;
 }
 .days-forecast-days {
-  border-bottom:1px solid #828893 ;
+  border-bottom: 1px solid #8288935d;
   height: 12.5vh;
   width: 90%;
   display: flex;
@@ -34,17 +33,18 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.last{
+.last {
   border: none;
 }
 .days-forecast-day {
   color: #828893;
-
+  margin-top: 2vh;
 }
 .days-forecast-situation {
   color: #c4cad3;
-
+  height: 10vh;
 }
 .days-forecast-deduction {
+  margin-top: 2vh;
   color: #c4cad3;
 }

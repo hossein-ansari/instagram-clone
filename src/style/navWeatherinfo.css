@@ -60,10 +60,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: max-content;
   width: 25vw;
+  height: 20vh;
 }
 .weather-img img {
+  height: 20vh;
+
   align-content: center;
   align-items: center;
   align-self: center;
@@ -105,6 +107,8 @@
   color: #828893;
 }
 .forecast-img {
+  margin-bottom: 1vh;
+  height: 10vh;
 }
 .forecast-temp {
   color: white;

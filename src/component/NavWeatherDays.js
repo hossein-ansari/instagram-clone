@@ -10,7 +10,7 @@ export default function NavWeatherDays() {
   }
   return (
     <div className="nav-weather-days">
-      <h2>7-day forecast</h2>
+      <h2>days forecast</h2>
       <div className="days-forecast-nav">
         {data.forecastInfo !== undefined
           ? data.forecastInfo.map((days) => {
@@ -21,12 +21,17 @@ export default function NavWeatherDays() {
                     <p className="days-forecast-day">
                       {splitInfo(days.dt_txt)}
                     </p>
-                    <p className="days-forecast-situation">
-                      <i></i>
-                      {days.weather[0].main}
-                    </p>
+                    <img
+                      className="days-forecast-situation"
+                      src={`https://openweathermap.org/img/wn/${
+                        data.forecastInfo
+                          ? data.forecastInfo[1].weather[0].icon
+                          : ""
+                      }@2x.png`}
+                      alt=""
+                    ></img>
                     <p className="days-forecast-deduction">
-                      {ConvertTemperature(data.forecastInfo[1].main.temp)}°
+                      {ConvertTemperature(days.main.temp)}°
                     </p>
                   </div>
                 );

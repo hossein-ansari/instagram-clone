@@ -23,7 +23,12 @@ export default function MainInfoNav() {
         </p>
       </div>
       <div className="weather-img">
-        <img alt="image"></img>
+        <img
+          src={`https://openweathermap.org/img/wn/${
+            data.forecastInfo ? data.forecastInfo[1].weather[0].icon : ""
+          }@2x.png`}
+          alt=""
+        ></img>
       </div>
     </div>
   );

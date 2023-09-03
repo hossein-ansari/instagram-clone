@@ -16,7 +16,7 @@ export default function TodayForecastNav() {
                 return (
                   <div className={`forecast-time-info ${index === 4 ? 'last' : ''}`}>
                     <p className="forecast-time">{splitInfo(days.dt_txt)}</p>
-                    <img className="forecast-img" alt="image"></img>
+                    <img src={`https://openweathermap.org/img/wn/${days.weather[0].icon}@2x.png`} className="forecast-img" alt="image"></img>
                     <p className="forecast-temp">{ConvertTemperature(days.main.temp)}°</p>
                   </div>
                 );
