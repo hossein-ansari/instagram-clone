@@ -1,31 +1,28 @@
 import React, { createContext, useEffect, useState } from "react";
 const contextBox = createContext();
 const AllDatasProvider = ({ children }) => {
+  const [cityName, setCityName] = useState("tehran");
   const [cityInfo, setCityInfo] = useState();
   const [forecastInfo, setForecastInfo] = useState();
-  console.log(cityInfo, forecastInfo);
   useEffect(() => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?q=Copenhagen,Copenhagen&appid=0e89a6da403bb8b4ec40a7f0fedb1482",
+      `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=0e89a6da403bb8b4ec40a7f0fedb1482`,
       {
         method: "GET",
       }
     )
       .then((response) => response.json())
       .then((data) => {
-        setCityInfo(data.city);
-        setForecastInfo(data.list);
+        if (data.cod !== '404') {
+          setCityInfo(data.city);
+          setForecastInfo(data.list);
+        }
       });
-    fetch("https://openweathermap.org/img/wn/10d@2x.png", {
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-      });
-  }, []);
+  }, [cityName]);
   return (
-    <contextBox.Provider value={{ cityInfo, forecastInfo }}>
+    <contextBox.Provider
+      value={{ cityInfo, forecastInfo, cityName, setCityName }}
+    >
       {children}
     </contextBox.Provider>
   );
