@@ -1,3 +1,7 @@
+Please turn on your vpn to use the app
+
+_____________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
