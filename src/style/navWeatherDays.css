@@ -48,3 +48,39 @@
   margin-top: 2vh;
   color: #c4cad3;
 }
+@media only screen and (max-width: 990px) {
+  .days-forecast-days {
+    width: 80%;
+  }
+  .days-forecast-deduction,
+  .days-forecast-day {
+    height: 8vh;
+    margin-top: 2vh;
+
+    font-size: 0.7rem;
+  }
+  .days-forecast-situation {
+    height: 8vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .days-forecast-days {
+    width: 80%;
+  }
+  .days-forecast-days {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .days-forecast-deduction,
+  .days-forecast-day
+   {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  .days-forecast-situation {
+    height: 5vh;
+  }
+}

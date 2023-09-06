@@ -157,3 +157,40 @@
 .infos-info {
   font-size: 2rem;
 }
+@media only screen and (max-width: 600px) {
+  .nav-weather-info {
+    font-size: 0.7rem;
+  }
+  .air-infos-nav,
+  .air-infos {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav-weather-info {
+    font-size: 0.7rem;
+  }
+  .forecast-temp {
+    font-size: 0.8rem;
+  }
+  .forecast-time-info {
+  }
+  .forecast-img {
+    height: 7vh;
+  }
+  .air-infos-temp {
+    font-size: 1rem;
+
+  }
+  .air-infos-characteristic {
+    font-size: 1rem;
+  }
+  .infos-info {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-weather-info {
+    width: 48vw;
+  }
+}
