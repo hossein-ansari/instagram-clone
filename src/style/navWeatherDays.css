@@ -83,4 +83,8 @@
   .days-forecast-situation {
     height: 5vh;
   }
+  .nav-weather-days h2 {
+    font-size: .8rem;
+    margin: 1vh;
+  }
 }
