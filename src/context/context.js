@@ -6,7 +6,7 @@ const AllDatasProvider = ({ children }) => {
   const [forecastInfo, setForecastInfo] = useState();
   useEffect(() => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=0e89a6da403bb8b4ec40a7f0fedb1482`,
+      `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=0e89a6da403bb8b4ec40a7f0fedb1482`,
       {
         method: "GET",
       }
